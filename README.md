@@ -42,10 +42,10 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 <img src="http://img.blog.csdn.net/20170401102503243?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
 
 + 修改QSArchiveTestcopy-Info.plist名称为QSArchiveTest _Enterprise-Info.plist，点击工程，选择target QSArchiveTest_Enterprise,点击Build Settings ,搜索plist，将如图所示的QSArchiveTest copy-Info.plist名称修改为QSArchiveTest_Enterprise-Info.plist ，然后点击info,如果成功，则如图，若不成功，可能是复制文档中名称错误，请从工程文件中复制文件名。
-<center>
-<img src="http://img.blog.csdn.net/20170401102612675?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
-	<img src="http://img.blog.csdn.net/20170401102633722?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
-</center>
+    <center>
+    <img src="http://img.blog.csdn.net/20170401102612675?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
+        <img src="http://img.blog.csdn.net/20170401102633722?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
+    </center>
 	
 
 + 为当前target添加Scheme。点击当前Scheme,选择Manage Schemes, 删除QSArchiveTest copy，然后选择新建，选择当前已新建好的target，点击ok
