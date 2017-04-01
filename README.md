@@ -99,14 +99,15 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 **获取不同的target对应的证书名称及mobileprovision的uuid，以下以企业证书为例**
 
 + 点击工程，选择target-> QSArchiveTest_Enterprise，点击build settings,滑动到Signing，点击Provisioning Profile(Deprecated)栏，选择other，拷贝uuid，替换autoarchive.sh脚本中的enterpriseProvisioningProfile变量值，如图所示
-![这里写图片描述](http://img.blog.csdn.net/20170401103816605?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+    ![这里写图片描述](http://img.blog.csdn.net/20170401103816605?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 	![这里写图片描述](http://img.blog.csdn.net/20170401103901182?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 	
 
 + 点击Code Signing Identity,选择other，拷贝证书名，替换autoarchive.sh中的** enterpriseCodeSignIdentity变量值，如图所示
-![这里写图片描述](http://img.blog.csdn.net/20170401103935466?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401103935466?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
   
 	![这里写图片描述](http://img.blog.csdn.net/20170401104035046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
@@ -143,19 +144,19 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 **本脚本包括以下几个方法**
 
 + clean方法，作用为clean工程，日志将会输出到log.txt中，使用xcodebuild命令执行，关于xcodebuild命令的详细情况请使用xcodebuild –help了解，如无法使用xcodebuild，请检查mac使用安装了Xcode，如已安装，请检查是否设置Xcode为当前命令行工具，检查方法如图
-![这里写图片描述](http://img.blog.csdn.net/20170401104337145?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401104337145?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-![这里写图片描述](http://img.blog.csdn.net/20170401104404137?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401104404137?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 + archive方法，archive方法主要为打包QSArchiveTest.xcarchive所用
-![这里写图片描述](http://img.blog.csdn.net/20170401104440756?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401104440756?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 + export方法，此方法为导出ipa包，导出路径自定义
 
 	![这里写图片描述](http://img.blog.csdn.net/20170401104506741?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 + **install方法，该方法生效需要安装**ideviceinstaller，libimobiledevice两个工具。两个工具可以使用homebrew进行安装。这两个工具用于安装ipa或者管理iOS设备应用，查看当前连接设备的信息等。****
-![这里写图片描述](http://img.blog.csdn.net/20170401104534710?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401104534710?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ###安装homebrew
 
@@ -210,4 +211,4 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 **ideviceinstaller工具的功能还有很多，此处不再详细解释，可自行探索**
 
 + upload方法，该方法用于上传ipa至AppStore，只有在AppStore模式下才会执行。Upload方法用到了Xcode自带的工具Application Loader altool，与手动上传方法一致。altool位于Application Loader中，三个参数ipaPath,appleId,applepassword,ipaPath为ipa包导出的路径，applied为开发者帐号，applepassword为开发者帐号的密码
-![这里写图片描述](http://img.blog.csdn.net/20170401104608341?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+    ![这里写图片描述](http://img.blog.csdn.net/20170401104608341?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
