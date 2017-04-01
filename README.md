@@ -1,4 +1,5 @@
-#iOS自动化打包脚本(shell)
+iOS自动化打包脚本(shell)
+====
 
 
 
@@ -6,7 +7,8 @@
 
 -----------
 
-###打开autoarchive.sh脚本
+打开autoarchive.sh脚本
+=====
 
 <img src="http://img.blog.csdn.net/20170401102400273?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width="50%" height="30%" />
 
