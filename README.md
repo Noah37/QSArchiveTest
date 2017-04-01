@@ -1,6 +1,5 @@
-#iOS自动化打包脚本(shell)
-
-
+iOS自动化打包脚本(shell)
+====
 
 **本脚本主要作用为代替人工打包app，导出ipa包并安装的过程，如果是AppStore方式，会自动上传AppStore，不需要手动管理。 如需使用自动安装ipa功能，需要进行一些额外的环境配置。**
 
@@ -8,9 +7,37 @@
 
 ###打开autoarchive.sh脚本
 
-![这里写图片描述](http://img.blog.csdn.net/20170401102400273?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+````
+projectName="QSArchiveTest"
 
-主要配置如上图
+# four types
+development="Development"
+enterprise="Enterprise"
+appstore="AppStore"
+adhoc="AdHoc"
+
+#Enterprise CA certificate name and mobileprovision uuid
+enterpriseCodeSignIdentity="iPhone Distribution: xxxxxxx"
+#uuid
+enterpriseProvisioningProfile="xxxxxxx"
+#Development CA certificate name and mobileprovision uuid
+developmentCodeSignIdentity="iPhone Developer: xxxxxxx"
+#uuid
+developmentProvisioningProfile="xxxxxx"
+#AdHoc CA certificate name and mobileprovision uuid
+adhocCodeSignIdentity=""
+adhocProvisioningProfile=""
+#AppStore CA certificate name and mobileprovision uuid
+appstoreCodeSignIdentity="iPhone Distribution: xxxxxx"
+appstoreProvisioningProfile="xxxxxx"
+
+#Apple ID if needed
+appleid="xxxxxxx"
+applepassword="xxxxxxx"
+
+````
+
+主要配置如上
 
 **projectName为当前待打包工程的工程名**
 
