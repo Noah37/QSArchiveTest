@@ -2,7 +2,7 @@
 //  QSArchiveTestUITests.m
 //  QSArchiveTestUITests
 //
-//  Created by caonongyun on 2017/4/1.
+//  Created by Nory Chao on 2017/4/1.
 //  Copyright © 2017年 QS. All rights reserved.
 //
 
