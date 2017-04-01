@@ -27,23 +27,23 @@ appstore="AppStore"
 adhoc="AdHoc"
 
 #Enterprise CA certificate name and mobileprovision uuid
-enterpriseCodeSignIdentity="iPhone Distribution: Industrial Bank Co., Ltd."
+enterpriseCodeSignIdentity="iPhone Distribution: xxxxxxx"
 #uuid
-enterpriseProvisioningProfile="272bb89b-7f2e-4aaf-9634-b7bd69ed7833"
+enterpriseProvisioningProfile="xxxxxxxx"
 #Development CA certificate name and mobileprovision uuid
-developmentCodeSignIdentity="iPhone Developer: Guo Shaoqing (CYXM98D895)"
+developmentCodeSignIdentity="iPhone Developer: xxxxxxxx"
 #uuid
-developmentProvisioningProfile="35b8e6e5-6fbb-41f1-8975-cf44d63d8b27"
+developmentProvisioningProfile="xxxxxxxx"
 #AdHoc CA certificate name and mobileprovision uuid
 adhocCodeSignIdentity=""
 adhocProvisioningProfile=""
 #AppStore CA certificate name and mobileprovision uuid
-appstoreCodeSignIdentity="iPhone Distribution: Guo Shaoqing (ZYDXKQKHVY)"
-appstoreProvisioningProfile="e40d0608-b291-4f33-a187-31bed4247db7"
+appstoreCodeSignIdentity="iPhone Distribution: xxxxxxx"
+appstoreProvisioningProfile="xxxxxxx"
 
 #Apple ID if needed
-appleid="cibemobile@126.com"
-applepassword="Cibemobile2016"
+appleid="xxxxxxxx"
+applepassword="xxxxxxxx"
 
 if [ $# -lt 1 ];then
 echo "Error! Should enter the archive type (Development or AppStore or Enterprise)."
