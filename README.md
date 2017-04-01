@@ -79,10 +79,11 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 
 **以上步骤成功新建了一个名为QSArchiveTest_Enterprise的Scheme，此时，当前工程可以运行在QSArchiveTest_Enterprise Scheme上，接下来，我们可以按照以上步骤新建QSArchiveTest_Development ，QSArchiveTest_AppStore, QSArchiveTest_AdHoc等Schemes**
 
-	![这里写图片描述](http://img.blog.csdn.net/20170401103014501?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170401103014501?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 **结果如图所示**
-	![这里写图片描述](http://img.blog.csdn.net/20170401103110815?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+![这里写图片描述](http://img.blog.csdn.net/20170401103110815?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 #### 为各个target配置不同的证书及mobileprovision，不同的配置将生成不同的product，也就是不同的app。下面以企业证书为例####
 
@@ -140,12 +141,12 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 
 **重复以上步骤，分别获取证书名称及provisionfile的 uuid，替换autoarchive.sh中的CodeSignIdentity，ProvisioningProfile对应变量的值，结果如图所示。此处未有adhoc证书，因此置为空**
 
-	![这里写图片描述](http://img.blog.csdn.net/20170401104112777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170401104112777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 
 **如需使用上传至AppStore功能，需在脚本中设置Apple ID如图，将自己的Apple ID以及密码替换即可**
 
-	![这里写图片描述](http://img.blog.csdn.net/20170401104147808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170401104147808?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 **至此，已完成了自动化脚本执行所需要的配置，可以开始使用脚本进行打包了。**
 
@@ -163,8 +164,8 @@ _**四种类型的名称需要与当前工程的Scheme名称后缀一致。**_
 
 **再次执行脚本，等待打包过程结束，如果当前连接了设备，请先将设备上的应用删除，脚本打包完成后将会自动将ipa包安装到设备中（如需成功安装ipa到设备，需要查看下文-脚本详解，按照其中的步骤安装相应的工具）。成功如下图所示，如失败，请查看错误提示，并参照错误提示检查前面的步骤。打包完成后会自动打开当前ipa包所在目录，如未打开，请拷贝exportPath路径，打开Finder，使用快捷键 Command + shilf + g，打开ipa包路径。**
 
-	![这里写图片描述](http://img.blog.csdn.net/20170401104227309?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
-	![这里写图片描述](http://img.blog.csdn.net/20170401104246184?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170401104227309?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20170401104246184?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvdTAxMDQ1ODgwOA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 ## 脚本详解##
 
